@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.danny.contactosapp" >
+    package="com.example.danny.calculator20" >
 
     <application
         android:allowBackup="true"
@@ -14,14 +14,6 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".add" >
-        </activity>
-        <activity android:name=".modify" >
-        </activity>
-        <activity android:name=".list" >
-        </activity>
-        <activity android:name=".delete" >
         </activity>
     </application>
 
