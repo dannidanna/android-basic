@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Numero 1:"
+                android:text="Number 1:"
                 android:id="@+id/textView"
                 android:textColor="#009688" />
 
@@ -55,7 +55,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Numero 2:"
+                android:text="Number 2:"
                 android:id="@+id/textView2"
                 android:textColor="#009688" />
 
@@ -71,11 +71,11 @@
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="85dp">
 
             <ImageButton
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:id="@+id/btn_plus"
                 android:layout_weight="1"
                 android:src="@drawable/add"
@@ -86,7 +86,7 @@
 
             <ImageButton
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:id="@+id/btn_minus"
                 android:src="@drawable/minus"
                 android:layout_weight="1"
@@ -96,7 +96,7 @@
 
             <ImageButton
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:id="@+id/btn_for"
                 android:background="#b2dfdb"
                 android:layout_weight="1"
@@ -106,7 +106,7 @@
 
             <ImageButton
                 android:layout_width="0dp"
-                android:layout_height="match_parent"
+                android:layout_height="70dp"
                 android:id="@+id/btn_divide"
                 android:background="#b2dfdb"
                 android:layout_weight="1"
@@ -114,15 +114,20 @@
                 android:padding="20dp"
                 android:scaleType="centerInside" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="Resultado:"
-                android:id="@+id/txt_result"
-                android:layout_weight="1"
-                android:textColor="#009688" />
+        </LinearLayout>
 
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="89dp"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Result:"
+                android:id="@+id/txt_result"
+                android:textColor="#009688" />
         </LinearLayout>
 
     </LinearLayout>

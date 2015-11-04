@@ -2,13 +2,14 @@ package com.example.danny.contactosapp;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
-public class add extends AppCompatActivity {
+public class add extends ActionBarActivity {
     myDB db;
     EditText nombre;
     EditText apellido;
