@@ -2,6 +2,7 @@ package com.example.danny.consqlite;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 /**
@@ -50,6 +51,16 @@ public class DBAdm {
     }
 
     public void modificarTelefono(String nombre, String nuevoTelefono){
-        db.update(TABLE_NAME,generarContentValues(nombre, nuevoTelefono),CN_NAME + "=?",new String[]{nombre});
+        db.update(TABLE_NAME, generarContentValues(nombre, nuevoTelefono), CN_NAME + "=?", new String[]{nombre});
+    }
+
+    public Cursor cargarCursorContactos(){
+        String[] columnas = new String[]{CN_ID,CN_NAME,CN_CELL};
+        return db.query(TABLE_NAME,columnas,null,null,null,null,null);
+    }
+
+    public Cursor buscarContacto(String nombre){
+        String[] columnas = new String[]{CN_ID,CN_NAME,CN_CELL};
+        return db.query(TABLE_NAME,columnas,CN_NAME+"=?", new String[]{nombre},null,null,null);
     }
 }
