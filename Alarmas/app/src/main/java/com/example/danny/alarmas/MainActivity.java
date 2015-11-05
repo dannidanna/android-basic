@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
                 final AlertDialog.Builder alertaSimple = new AlertDialog.Builder(MainActivity.this);
 
                 alertaSimple.setTitle("ALERTA SIMPLE");
-                alertaSimple.setMessage("Mensaje");
+                alertaSimple.setMessage("Hora de hacer Ejercicio");
                 alertaSimple.setPositiveButton("Aceptar", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
@@ -68,7 +68,7 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast tostada = Toast.makeText(getApplicationContext(),"MENSAJE", Toast.LENGTH_LONG);
+                Toast tostada = Toast.makeText(getApplicationContext(),"Alimentate Sano!", Toast.LENGTH_LONG);
                 tostada.setGravity(Gravity.TOP|Gravity.LEFT, 100,0);
                 tostada.show();
             }
@@ -85,8 +85,8 @@ public class MainActivity extends AppCompatActivity {
                 notificacion.setTicker("Notification How To Android");
                 notificacion.setWhen(System.currentTimeMillis());
                 notificacion.setContentTitle("How to android");
-                notificacion.setContentText("Texto");
-                notificacion.setContentInfo("HTS");
+                notificacion.setContentText("Rutina del Dia de Hoy");
+                notificacion.setContentInfo("Dia Lunes");
 
                 Uri sonido = RingtoneManager.getDefaultUri(Notification.DEFAULT_SOUND);
                 notificacion.setSound(sonido);
