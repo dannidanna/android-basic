@@ -2,9 +2,6 @@ package com.example.danny.consqlite;
 
 import android.app.Activity;
 import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
-import android.database.sqlite.SQLiteOpenHelper;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -13,6 +10,7 @@ import android.widget.SimpleCursorAdapter;
 import android.widget.TextView;
 
 public class MainActivity extends Activity implements View.OnClickListener {
+
     private DBAdm manager;
     private Cursor cursor;
     private ListView lista;
@@ -39,10 +37,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
 
         cursor = manager.cargarCursorContactos();
         adapter = new SimpleCursorAdapter(this,android.R.layout.two_line_list_item,cursor,from,to,0);
+        lista.setAdapter(adapter);
 
     }
 
-    @Override
+   @Override
     public void onClick(View v) {
         if(v.getId()==R.id.btn_busq){
             Cursor c =manager.buscarContacto(tv.getText().toString());

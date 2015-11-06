@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">INVENTARIO</string>
+    <string name="agregarNuevo">Agregar Nuevo</string>
+    <string name="editarProducto">Editar Producto</string>
+    <string name="eliminarProducto">Eliminar Producto</string>
+
+</resources>
